@@ -6,18 +6,18 @@ $bot = new Linebot();
 $text= $bot->getMessageText();
 $bot->reply($text);
 
-$userid= $bot->getUserId();
+//$userid= $bot->getUserId();
 
-$filename= 'userid.txt';
+$filename= 'command.txt';
 
 
   if (file_exists($filename)) {
-  $myfile = fopen('userid.txt', "w+") or die("Unable to open file!");
-  fwrite($myfile, $userid);
+  $myfile = fopen('command.txt', "w+") or die("Unable to open file!");
+  fwrite($myfile, $text);
   fclose($myfile);
 } else {
-  $myfile = fopen('userid.txt', "x+") or die("Unable to open file!");
-  fwrite($myfile, $userid);
+  $myfile = fopen('command.txt', "x+") or die("Unable to open file!");
+  fwrite($myfile, $text);
   fclose($myfile);
 }
 
