@@ -2,11 +2,11 @@
 
 class Setting {
 	public static function getChannelAccessToken(){
-		$channelAccessToken = "M5o1iFTs9l4572jXo+BYQ+HEKuWZJQSnPDe83WHDiJ5czxOKQD8SaOYtFDVdex+5EMP1VFtbn03Codz0bji4/EmHSXPgB5pVO82F4paIEIRNnrahE4GGYu3lyp8OOOyrz4aMaAWRXWJB0NnwBZrYqAdB04t89/1O/w1cDnyilFU=";
+		$channelAccessToken = "Your-Access-Token";
 		return $channelAccessToken;
 	}
 	public static function getChannelSecret(){
-		$channelSecret = "97e26cfc880203cd839c7cbdbdd094aa";
+		$channelSecret = "Your-Channel-Secret";
 		return $channelSecret;
 	}
 	public static function getApiReply(){
