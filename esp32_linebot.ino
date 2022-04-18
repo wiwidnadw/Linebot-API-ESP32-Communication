@@ -1,14 +1,17 @@
 //Design by Nur Ahmad Dwi Wibowo
 //search my repo on github @wiwidnadw
+// for tutorial, visit https://www.youtube.com/watch?v=fL0tTAexkeU
+//YT:Digitalneering
+//Line:wiwidnadw
 
 #include <WiFiClientSecure.h>
 #include <HTTPClient.h>
 WiFiClientSecure client;
 
 //set WiFi Connection
-const char* ssid     = "Wiwid"; 
-const char* password = "Wiwid1230";
-String url = "https://digitalneeringserver.000webhostapp.com/command.txt"; //your hosting address
+const char* ssid     = "Your Wifi"; 
+const char* password = "Your Password";
+String url = "Your URL"; //your hosting address
 
 //set output pin
 int ledpin1 = 26;
